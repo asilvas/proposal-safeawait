@@ -78,4 +78,4 @@ reduce code footprint, it will eventually be able to be optimized away by ECMASc
 
 ## Discussion
 
-https://github.com/asilvas/proposal-safeawait/issues
+https://twitter.com/Aaron_Silvas/status/1120050278542090242
