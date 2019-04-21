@@ -1,0 +1,22 @@
+<!doctype html>
+<head><meta charset="utf-8">
+<link rel="stylesheet" href="./spec.css">
+<script src="./spec.js"></script>
+<script type="application/json" id="menu-search-biblio">[{"type":"clause","id":"sec-intro","aoid":null,"title":"Introduction","titleHTML":"Introduction","number":"1","namespace":"<no location>","location":"","referencingIds":[],"key":"Introduction"},{"type":"clause","id":"sec-safeawait","aoid":null,"title":"safeawait promise","titleHTML":"safeawait <var>promise</var>","number":"2","namespace":"<no location>","location":"","referencingIds":[],"key":"safeawait promise"}]</script></head><body><div id="menu-toggle">☰</div><div id="menu-spacer"></div><div id="menu"><div id="menu-search"><input type="text" id="menu-search-box" placeholder="Search..."><div id="menu-search-results" class="inactive"></div></div><div id="menu-pins"><div class="menu-pane-header">Pins</div><ul id="menu-pins-list"></ul></div><div class="menu-pane-header">Table of Contents</div><div id="menu-toc"><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intro" title="Introduction"><span class="secnum">1</span> Introduction</a></li><li><span class="item-toggle-none"></span><a href="#sec-safeawait" title="safeawait promise"><span class="secnum">2</span> safeawait <var>promise</var></a></li></ol></div></div><div id="spec-container">
+
+<emu-clause id="sec-intro">
+  <h1 class="first"><span class="secnum">1</span>Introduction</h1>
+
+  <p>Background for  <a href="https://github.com/asilvas/proposal-safeawait">tc39/proposal-safeawait</a>, inspired by  <a href="https://twitter.com/DavidWells/status/1119729914876284928">David Wells</a>. Please report any  <a href="https://github.com/asilvas/proposal-safeawait/issues">issues</a>.</p>
+
+</emu-clause>
+
+<emu-clause id="sec-safeawait">
+  <h1><span class="secnum">2</span>safeawait <var>promise</var></h1>
+
+  <p>Built atop <code>await</code>, <code>safeawait</code> simply returns all outcomes of a Promise into a tuple <code>[rejectValue, resolveValue]</code>:</p>
+
+  <emu-alg><ol><li>Always return a tuple.</li><li>Promise <code>reject</code> returned as-is at index zero of the returned tuple, or <code>undefined</code>.</li><li>Promise <code>resolve</code> returned as-is at index one of the returned tuple, or <code>undefined</code>.</li><li>Never throws.
+  </li></ol></emu-alg>
+</emu-clause>
+</div></body>

@@ -1,0 +1,27 @@
+{
+  "name": "proposal-safeawait",
+  "version": "0.0.0",
+  "description": "TC39 Proposal for `safeawait` keyword",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir out && ecmarkup spec/index.html --js=out/spec.js --css=out/spec.css out/index.html",
+    "watch": "mkdir out && ecmarkup spec/index.html --js=out/spec.js --css=out/spec.css out/index.html --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asilvas/proposal-safeawait.git"
+  },
+  "keywords": [
+    "ecmascript",
+    "tc39"
+  ],
+  "author": "Aaron Silvas",
+  "license": "https://tc39.github.io/ecma262/#sec-copyright-and-software-license",
+  "bugs": {
+    "url": "https://github.com/asilvas/proposal-safeawait/issues"
+  },
+  "homepage": "https://github.com/asilvas/proposal-safeawait#readme",
+  "devDependencies": {
+    "ecmarkup": "^3.16.0"
+  }
+}
