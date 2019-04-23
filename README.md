@@ -1,3 +1,8 @@
+# Cancelled in favor of Promise.prototype.flatten
+
+See [Promise.prototype.flatten](https://github.com/asilvas/proposal-promise-flatten)
+
+
 # `safeawait` keyword
 
 - Spec in progress
